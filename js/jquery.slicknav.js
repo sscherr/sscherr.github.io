@@ -5,12 +5,17 @@
 */
 
 /*!
-line 11-13 adds click activation to the wheel zoom function on the map
+line 11-17 adds click activation to the wheel zoom function on the map and disables it upon leaving the map
 */
 
 $('.line6').click(function () {
     $('.line6 iframe').css("pointer-events", "auto");
 });
+
+$('.line6').mouseleave(function () {
+    $('.line6 iframe').css("pointer-events", "none");
+});
+
 
 ;(function ($, document, window) {
 	var
