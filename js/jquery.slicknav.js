@@ -3,6 +3,15 @@
 	(c) 2014 Josh Cope
 	licensed under MIT
 */
+
+/*!
+line 11-13 adds click activation to the wheel zoom function on the map
+*/
+
+$('.line6').click(function () {
+    $('.line6 iframe').css("pointer-events", "auto");
+});
+
 ;(function ($, document, window) {
 	var
 	// default settings object.
